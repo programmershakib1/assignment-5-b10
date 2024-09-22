@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5 B10</title>
+    <!-- tailwind and daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- tailwind CSS configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(180, 244, 97)',
+                        secondary: 'rgb(17, 17, 17)',
+                        third: 'rgba(17, 17, 17, 0.7)',
+                        btn_bg: 'rgba(17, 17, 17, 0.1)',
+                        nav_bg: 'rgb(249, 247, 243)',
+                        input: 'rgba(17, 17, 17, 0.4)',
+                    },
+                    fontFamily: {
+                        Lexend: 'Lexend',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-Lexend">
+    <!-- navbar section -->
+    <section class="bg-nav_bg">
+        <nav class="container w-11/12 mx-auto flex justify-between items-center py-6">
+            <div>
+                <button class="w-28 h-12 text-secondary bg-primary text-xl font-semibold rounded-lg">Blog</button>
+            </div>
+            <div class="flex items-center gap-4">
+                <img src="images/logo.png" alt="">
+                <h2 class="text-secondary text-xl font-semibold">Donate Bangladesh</h2>
+            </div>
+            <div class="flex items-center gap-4">
+                <img src="images/coin.png" alt="">
+                <h2 class="text-third text-xl font-medium">5500 BDT</h2>
+            </div>
+        </nav>
+    </section>
+    <!-- main section -->
+    <main>
+        <section class="container w-11/12 mx-auto">
+            <!-- button part -->
+            <div class="flex justify-center gap-5 pt-20 pb-10">
+                <button class="text-secondary bg-primary text-xl font-semibold rounded-lg w-40 h-14">Donation</button>
+                <button class="w-40 h-14 text-third rounded-lg font-semibold border-solid border-2">History</button>
+            </div>
+            <!-- card part -->
+            <div class="grid grid-cols-2 gap-5">
+                <div>
+                    <img class="w-full h-full" src="images/noakhali.png" alt="">
+                </div>
+                <div>
+                    <div>
+                        <button class="flex justify-center items-center gap-2 bg-btn_bg w-28 h-11 rounded-lg">
+                            <img src="images/coin.png" alt="">
+                            <p>0 BDT</p>
+                        </button>
+                        <h2 class="text-secondary text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+                        <p class="text-third font-light text-base">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                        <input class="border-2 placeholder:text-base rounded-lg" type="text" placeholder="Write Donation Amount">
+                        <button class="bg-primary rounded-lg text-xl font-semibold text-secondary">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
