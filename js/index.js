@@ -23,6 +23,8 @@ document.getElementById('btn-1')
 
             const modal = document.getElementById('my-modal');
             modal.showModal();
+
+            document.getElementById('input-1').value = '';
         }
         else{
             alert('Please Type Valid Input')
@@ -55,6 +57,8 @@ document.getElementById('btn-2')
 
             const modal = document.getElementById('my-modal');
             modal.showModal();
+
+            document.getElementById('input-2').value = '';
         }
         else{
             alert('Please Type Valid Input')
@@ -87,6 +91,8 @@ document.getElementById('btn-3')
 
             const modal = document.getElementById('my-modal');
             modal.showModal();
+
+            document.getElementById('input-3').value = '';
         }
         else{
             alert('Please Type Valid Input')
@@ -111,7 +117,7 @@ document.getElementById('btn-4')
             historyList.classList.add('border-2', 'rounded-lg');
 
             historyList.innerHTML = `
-                <p class="text-secondary text-xl font-bold my-5 mx-10">${donatedMoney} Taka is Donated for Child Labor in Bangladesh</p>
+                <p class="text-secondary text-xl font-bold my-5 mx-10">${donatedMoney} Taka is Donated for Donate for Child Labor in Bangladesh</p>
                 <p class="text-third mb-5 mx-10">Date: ${new Date()}</p>
             `;
             const historyContainer = element('history-list');
@@ -119,6 +125,8 @@ document.getElementById('btn-4')
 
             const modal = document.getElementById('my-modal');
             modal.showModal();
+
+            document.getElementById('input-4').value = '';
         }
         else{
             alert('Please Type Valid Input')
@@ -143,7 +151,7 @@ document.getElementById('btn-5')
             historyList.classList.add('border-2', 'rounded-lg');
 
             historyList.innerHTML = `
-                <p class="text-secondary text-xl font-bold my-5 mx-10">${donatedMoney} Taka is Donated for poor people in Bangladesh</p>
+                <p class="text-secondary text-xl font-bold my-5 mx-10">${donatedMoney} Taka is Donated for Donate for poor people in Bangladesh</p>
                 <p class="text-third mb-5 mx-10">Date: ${new Date()}</p>
             `;
             const historyContainer = element('history-list');
@@ -151,6 +159,8 @@ document.getElementById('btn-5')
 
             const modal = document.getElementById('my-modal');
             modal.showModal();
+
+            document.getElementById('input-5').value = '';
         }
         else{
             alert('Please Type Valid Input')
