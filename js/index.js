@@ -4,7 +4,7 @@ document.getElementById('btn-1')
         const donatedMoney = inputValue('input-1');
         const balance = inputNumber('balance-1');
 
-        if(donatedMoney > 0){
+        if(donatedMoney > 0 && availableBalance > donatedMoney){
             const availableMoney = availableBalance - donatedMoney;
             element('balance').innerText = availableMoney;
 
@@ -25,7 +25,7 @@ document.getElementById('btn-1')
             modal.showModal();
         }
         else{
-            alert('Please Valid Input')
+            alert('Please Type Valid Input')
         }
 });
 
@@ -36,7 +36,7 @@ document.getElementById('btn-2')
         const donatedMoney = inputValue('input-2');
         const balance = inputNumber('balance-2');
 
-        if(donatedMoney > 0){
+        if(donatedMoney > 0 && availableBalance > donatedMoney){
             const availableMoney = availableBalance - donatedMoney;
             element('balance').innerText = availableMoney;
 
@@ -57,7 +57,7 @@ document.getElementById('btn-2')
             modal.showModal();
         }
         else{
-            alert('Please Valid Input')
+            alert('Please Type Valid Input')
         }
 });
 
@@ -68,7 +68,7 @@ document.getElementById('btn-3')
         const donatedMoney = inputValue('input-3');
         const balance = inputNumber('balance-3');
 
-        if(donatedMoney > 0){
+        if(donatedMoney > 0 && availableBalance > donatedMoney){
             const availableMoney = availableBalance - donatedMoney;
             element('balance').innerText = availableMoney;
 
@@ -89,7 +89,7 @@ document.getElementById('btn-3')
             modal.showModal();
         }
         else{
-            alert('Please Valid Input')
+            alert('Please Type Valid Input')
         }
 });
 
@@ -100,7 +100,7 @@ document.getElementById('btn-4')
         const donatedMoney = inputValue('input-4');
         const balance = inputNumber('balance-4');
 
-        if(donatedMoney > 0){
+        if(donatedMoney > 0 && availableBalance > donatedMoney){
             const availableMoney = availableBalance - donatedMoney;
             element('balance').innerText = availableMoney;
 
@@ -121,7 +121,7 @@ document.getElementById('btn-4')
             modal.showModal();
         }
         else{
-            alert('Please Valid Input')
+            alert('Please Type Valid Input')
         }
 });
 
@@ -132,7 +132,7 @@ document.getElementById('btn-5')
         const donatedMoney = inputValue('input-5');
         const balance = inputNumber('balance-5');
 
-        if(donatedMoney > 0){
+        if(donatedMoney > 0 && availableBalance > donatedMoney){
             const availableMoney = availableBalance - donatedMoney;
             element('balance').innerText = availableMoney;
 
@@ -153,7 +153,7 @@ document.getElementById('btn-5')
             modal.showModal();
         }
         else{
-            alert('Please Valid Input')
+            alert('Please Type Valid Input')
         }
 });
 
