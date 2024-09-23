@@ -1,55 +1,102 @@
 document.getElementById('btn-1')
     .addEventListener('click', function(){
-        const input1 = document.getElementById('input-1').value;
-        const input1Number = parseFloat(input1);
-        const moneyButton1 = parseFloat(document.getElementById('money-button-1').innerText);
-        const moneyButton1Update = input1Number + moneyButton1;
-        document.getElementById('money-button-1').innerText = moneyButton1Update;
-        const moneyHome = parseFloat(document.getElementById('money-home').innerText);
-        const moneyHomeUpdate = moneyHome - input1Number;
-        document.getElementById('money-home').innerText = moneyHomeUpdate;
+        const availableBalance = inputNumber('balance');
+        const donatedMoney = inputValue('input-1');
+        const balance = inputNumber('balance-1');
+
+        if(donatedMoney > 0){
+            const availableMoney = availableBalance - donatedMoney;
+            element('balance').innerText = availableMoney;
+
+            element('balance-1').innerText = balance + donatedMoney;
 
 
-        const historyList = document.createElement('div');
-        historyList.classList.add('border', 'rounded-lg');
+            const historyList = document.createElement('div');
+            historyList.classList.add('border', 'rounded-lg');
 
-        historyList.innerHTML = `
-                <p class="text-secondary my-5 ml-10">${input1} Taka is Donated for Donate for Flood at Noakhali, Bangladesh</p>
-                <p class="mb-5 ml-10">${new Date().toLocaleDateString()}</p>
-        `;
-        const historyContainer = document.getElementById('history-list');
-        historyContainer.appendChild(historyList);
+            historyList.innerHTML = `
+                <p class="text-secondary text-xl font-bold my-5 mx-10">${donatedMoney} Taka is Donated for Donate for Flood at Noakhali, Bangladesh</p>
+                <p class="text-third mb-5 mx-10">Date: ${new Date()}</p>
+            `;
+            const historyContainer = element('history-list');
+            historyContainer.appendChild(historyList);
+
+            const modal = document.getElementById('my-modal');
+            modal.showModal();
+        }
+        else{
+            alert('Please Valid Input')
+        }
 });
 
 
 document.getElementById('btn-2')
     .addEventListener('click', function(){
-        const input2 = document.getElementById('input-2').value;
-        const input2Number = parseFloat(input2);
-        const moneyButton2 = parseFloat(document.getElementById('money-button-2').innerText);
-        const moneyButton2Update = input2Number + moneyButton2;
-        document.getElementById('money-button-2').innerText = moneyButton2Update;
-        const moneyHome = parseFloat(document.getElementById('money-home').innerText);
-        const moneyHomeUpdate = moneyHome - input2Number;
-        document.getElementById('money-home').innerText = moneyHomeUpdate;
+        const availableBalance = inputNumber('balance');
+        const donatedMoney = inputValue('input-2');
+        const balance = inputNumber('balance-2');
+
+        if(donatedMoney > 0){
+            const availableMoney = availableBalance - donatedMoney;
+            element('balance').innerText = availableMoney;
+
+            element('balance-2').innerText = balance + donatedMoney;
+
+
+            const historyList = document.createElement('div');
+            historyList.classList.add('border', 'rounded-lg');
+
+            historyList.innerHTML = `
+                <p class="text-secondary text-xl font-bold my-5 mx-10">${donatedMoney} Taka is Donated for Donate for Flood Relief in Feni,Bangladesh</p>
+                <p class="text-third mb-5 mx-10">Date: ${new Date()}</p>
+            `;
+            const historyContainer = element('history-list');
+            historyContainer.appendChild(historyList);
+
+            const modal = document.getElementById('my-modal');
+            modal.showModal();
+        }
+        else{
+            alert('Please Valid Input')
+        }
 });
 
 
 document.getElementById('btn-3')
     .addEventListener('click', function(){
-        const input3 = document.getElementById('input-3').value;
-        const input3Number = parseFloat(input3);
-        const moneyButton3 = parseFloat(document.getElementById('money-button-3').innerText);
-        const money3 = input3Number + moneyButton3;
-        document.getElementById('money-button-3').innerText = money3;
-        const moneyHome = parseFloat(document.getElementById('money-home').innerText);
-        const moneyHomeUpdate = moneyHome - input3Number;
-        document.getElementById('money-home').innerText = moneyHomeUpdate;
+        const availableBalance = inputNumber('balance');
+        const donatedMoney = inputValue('input-3');
+        const balance = inputNumber('balance-3');
+
+        if(donatedMoney > 0){
+            const availableMoney = availableBalance - donatedMoney;
+            element('balance').innerText = availableMoney;
+
+            element('balance-3').innerText = balance + donatedMoney;
+
+
+            const historyList = document.createElement('div');
+            historyList.classList.add('border', 'rounded-lg');
+
+            historyList.innerHTML = `
+                <p class="text-secondary text-xl font-bold my-5 mx-10">${donatedMoney} Taka is Donated for Aid for Injured in the Quota Movement</p>
+                <p class="text-third mb-5 mx-10">Date: ${new Date()}</p>
+            `;
+            const historyContainer = element('history-list');
+            historyContainer.appendChild(historyList);
+
+            const modal = document.getElementById('my-modal');
+            modal.showModal();
+        }
+        else{
+            alert('Please Valid Input')
+        }
 });
 
 
 const historyBtn = document.getElementById('history-btn');
 const donationBtn = document.getElementById('donation-btn');
+
 historyBtn.addEventListener('click', function(){  
     historyBtn.classList.add('bg-primary');
     donationBtn.classList.remove('bg-primary');
@@ -57,13 +104,20 @@ historyBtn.addEventListener('click', function(){
 
     const card = document.getElementById('card');
     card.classList.add('hidden');
+
     const historyList = document.getElementById('history-list');
     historyList.classList.remove('hidden');
+
+    const footerBg = document.getElementById('footer-bg');
+    footerBg.classList.add('hidden');
 });
 
 donationBtn.addEventListener('click', function(){  
     donationBtn.classList.add('bg-primary');
     historyBtn.classList.remove('bg-primary');
+
+    const historyList = document.getElementById('history-list');
+    historyList.classList.add('hidden');
 
     const card = document.getElementById('card');
     card.classList.remove('hidden');

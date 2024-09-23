@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,9 +32,10 @@
         }
     </script>
 </head>
-<body>
-    <!-- nav section -->
-    <section class="">
+<body class="font-Lexend">
+    <header>
+      <!-- nav section -->
+      <section>
         <nav class="bg-nav_bg">
             <div class="container w-11/12 mx-auto flex justify-between items-center py-6">
                 <div>
@@ -42,7 +43,7 @@
                 </div>
                 <div class="flex items-center gap-4">
                     <img src="images/logo.png" alt="">
-                    <h2 class="text-secondary text-xl font-semibold">Donate Bangladesh</h2>
+                    <h2 class="text-secondary text-xl hidden lg:block font-semibold">Donate Bangladesh</h2>
                 </div>
                 <div class="flex items-center gap-4">
                     <img src="images/coin.png" alt="">
@@ -50,48 +51,58 @@
                 </div>
             </div>
         </nav>
-    </section>
-    <!-- faq section -->
-    <section class="container w-11/12 mx-auto">
+      </section>
+    </header>
+    <main>
+      <!-- faq section -->
+      <section class="container w-11/12 mx-auto">
         <h2 class="text-secondary font-bold text-3xl my-10">Important FAQ</h2>
-        <!-- faq 1 -->
+        <div class="border rounded-lg">
+              <!-- faq 1 -->
         <div>
-            <div tabindex="0" class="collapse collapse-arrow border-base-300 border rounded">
-                <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+            <div tabindex="0" class="py-5 collapse collapse-arrow border-base-300 border rounded">
+                <div class="collapse-title text-xl font-medium">What is the DOM?</div>
                 <div class="collapse-content">
-                  <p>tabindex="0" attribute is necessary to make the div focusable </p>
+                  <p>DOM stands for Document Object Model. Its primary purpose is to represent the structure of a document (like HTML) as a tree of objects, allowing programming languages to manipulate the content and structure dynamically.</p>
                 </div>
             </div>
         </div>
         <!-- faq 2 -->
         <div>
-            <div tabindex="0" class="collapse collapse-arrow border-base-300 border rounded">
-                <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+            <div tabindex="0" class="py-5 collapse collapse-arrow border-base-300 border rounded">
+                <div class="collapse-title text-xl font-medium">What is the difference between querySelector and querySelectorAll?</div>
                 <div class="collapse-content">
-                  <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                  <p>querySelector() selects the first matching element based on a CSS selector, while querySelectorAll() selects all matching elements and returns a static NodeList.</p>
                 </div>
             </div>
         </div>
         <!-- faq 3 -->
         <div>
-            <div tabindex="0" class="collapse collapse-arrow border-base-300 border rounded">
-                <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+            <div tabindex="0" class="py-5 collapse collapse-arrow border-base-300 border rounded">
+                <div class="collapse-title text-xl font-medium">How does JavaScript interact with the DOM?</div>
                 <div class="collapse-content">
-                  <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                  <p>JavaScript interacts with the DOM by allowing developers to access and manipulate HTML elements. This includes changing element content, attributes, styles, and responding to events. JavaScript can dynamically add or remove elements from the DOM, enabling interactive web applications.</p>
                 </div>
             </div>
         </div>
         <!-- faq 4 -->
         <div>
-            <div tabindex="0" class="collapse collapse-arrow border-base-300 border rounded">
-                <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+            <div tabindex="0" class="py-5 collapse collapse-arrow border-base-300 border rounded">
+                <div class="collapse-title text-xl font-medium">WHow is event propagation handled in the DOM?</div>
                 <div class="collapse-content">
-                  <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                  <p>Event propagation in the DOM can occur in three phases: capturing, target, and bubbling. During the capturing phase, the event travels from the root to the target element. In the target phase, the event reaches the target element. Finally, in the bubbling phase, the event travels back up to the root.</p>
                 </div>
             </div>
         </div>
-    </section>
+        </div>
+      </section>
+    </main>
+    <script>
+        document.getElementById('home-btn').addEventListener('click', function(){
+            window.location.href = 'index.html';
+        });
+    </script>
+    <script src="js/utilities.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/home.js"></script>
 </body>
 </html>
