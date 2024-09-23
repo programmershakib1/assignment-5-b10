@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- tailwind and daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- tailwind CSS configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(180, 244, 97)',
+                        secondary: 'rgb(17, 17, 17)',
+                        third: 'rgba(17, 17, 17, 0.7)',
+                        btn_bg: 'rgba(17, 17, 17, 0.1)',
+                        nav_bg: 'rgb(249, 247, 243)',
+                        input: 'rgba(17, 17, 17, 0.4)',
+                    },
+                    fontFamily: {
+                        Lexend: 'Lexend',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body>
+    <!-- nav section -->
+    <section class="">
+        <nav class="bg-nav_bg">
+            <div class="container w-11/12 mx-auto flex justify-between items-center py-6">
+                <div>
+                    <button id="home-btn" class="w-28 h-12 text-secondary bg-primary text-xl font-semibold rounded-lg">Home</button>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img src="images/logo.png" alt="">
+                    <h2 class="text-secondary text-xl font-semibold">Donate Bangladesh</h2>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img src="images/coin.png" alt="">
+                    <h2 class="text-third text-xl font-medium"><span id="money-home">5500</span> BDT</h2>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- faq section -->
+    <section class="container w-11/12 mx-auto">
+        <h2 class="text-secondary font-bold text-3xl my-10">Important FAQ</h2>
+        <!-- faq 1 -->
+        <div>
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 border rounded">
+                <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+                <div class="collapse-content">
+                  <p>tabindex="0" attribute is necessary to make the div focusable </p>
+                </div>
+            </div>
+        </div>
+        <!-- faq 2 -->
+        <div>
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 border rounded">
+                <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+                <div class="collapse-content">
+                  <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                </div>
+            </div>
+        </div>
+        <!-- faq 3 -->
+        <div>
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 border rounded">
+                <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+                <div class="collapse-content">
+                  <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                </div>
+            </div>
+        </div>
+        <!-- faq 4 -->
+        <div>
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 border rounded">
+                <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+                <div class="collapse-content">
+                  <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
