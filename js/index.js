@@ -1,200 +1,32 @@
-document.getElementById('btn-1')
+element('btn-1')
     .addEventListener('click', function(){
-        const availableBalance = inputNumber('balance');
-        const donatedMoney = inputValue('input-1');
-        const balance = inputNumber('balance-1');
-        
-        const check = document.getElementById('input-1').value;
-
-        if(donatedMoney > 0 && availableBalance > donatedMoney && !isNaN(check)){
-            const availableMoney = availableBalance - donatedMoney;
-            element('balance').innerText = availableMoney;
-
-            element('balance-1').innerText = balance + donatedMoney;
-
-            const historyList = document.createElement('div');
-            historyList.classList.add('border-2', 'rounded-lg');
-
-            historyList.innerHTML = `
-                <p class="text-secondary text-xl font-bold my-5 mx-10">${donatedMoney} Taka is Donated for Donate for Flood at Noakhali, Bangladesh</p>
-                <p class="text-third mb-5 mx-10">Date: ${new Date()}</p>
-            `;
-            element('history-list').appendChild(historyList);
-
-            element('my-modal').showModal();
-
-            element('input-1').value = '';
-        }
-        else{
-            alert('Please Type Valid Input')
-        }
+        commonEvent('input-1', 'balance-1', 'balance', 'history-list', 'my-modal', 'Donate for Flood at Noakhali, Bangladesh');
 });
 
-
-document.getElementById('btn-2')
+element('btn-2')
     .addEventListener('click', function(){
-        const availableBalance = inputNumber('balance');
-        const donatedMoney = inputValue('input-2');
-        const balance = inputNumber('balance-2');
-
-        const check = document.getElementById('input-2').value;
-
-        if(donatedMoney > 0 && availableBalance > donatedMoney && !isNaN(check)){
-            const availableMoney = availableBalance - donatedMoney;
-            element('balance').innerText = availableMoney;
-
-            element('balance-2').innerText = balance + donatedMoney;
-
-            const historyList = document.createElement('div');
-            historyList.classList.add('border-2', 'rounded-lg');
-
-            historyList.innerHTML = `
-                <p class="text-secondary text-xl font-bold my-5 mx-10">${donatedMoney} Taka is Donated for Donate for Flood Relief in Feni,Bangladesh</p>
-                <p class="text-third mb-5 mx-10">Date: ${new Date()}</p>
-            `;
-            element('history-list').appendChild(historyList);
-
-            element('my-modal').showModal();
-
-            element('input-2').value = '';
-        }
-        else{
-            alert('Please Type Valid Input')
-        }
+        commonEvent('input-2', 'balance-2', 'balance', 'history-list', 'my-modal', 'Donate for Flood Relief in Feni,Bangladesh');
 });
 
-
-document.getElementById('btn-3')
+element('btn-3')
     .addEventListener('click', function(){
-        const availableBalance = inputNumber('balance');
-        const donatedMoney = inputValue('input-3');
-        const balance = inputNumber('balance-3');
-
-        const check = document.getElementById('input-3').value;
-
-        if(donatedMoney > 0 && availableBalance > donatedMoney && !isNaN(check)){
-            const availableMoney = availableBalance - donatedMoney;
-            element('balance').innerText = availableMoney;
-
-            element('balance-3').innerText = balance + donatedMoney;
-
-            const historyList = document.createElement('div');
-            historyList.classList.add('border-2', 'rounded-lg');
-
-            historyList.innerHTML = `
-                <p class="text-secondary text-xl font-bold my-5 mx-10">${donatedMoney} Taka is Donated for Aid for Injured in the Quota Movement</p>
-                <p class="text-third mb-5 mx-10">Date: ${new Date()}</p>
-            `;
-            element('history-list').appendChild(historyList);
-
-            element('my-modal').showModal();
-
-            element('input-3').value = '';
-        }
-        else{
-            alert('Please Type Valid Input')
-        }
+        commonEvent('input-3', 'balance-3', 'balance', 'history-list', 'my-modal', 'Aid for Injured in the Quota Movement');
 });
 
-
-document.getElementById('btn-4')
+element('btn-4')
     .addEventListener('click', function(){
-        const availableBalance = inputNumber('balance');
-        const donatedMoney = inputValue('input-4');
-        const balance = inputNumber('balance-4');
-
-        const check = document.getElementById('input-4').value;
-
-        if(donatedMoney > 0 && availableBalance > donatedMoney && !isNaN(check)){
-            const availableMoney = availableBalance - donatedMoney;
-            element('balance').innerText = availableMoney;
-
-            element('balance-4').innerText = balance + donatedMoney;
-
-            const historyList = document.createElement('div');
-            historyList.classList.add('border-2', 'rounded-lg');
-
-            historyList.innerHTML = `
-                <p class="text-secondary text-xl font-bold my-5 mx-10">${donatedMoney} Taka is Donated for Donate for Child Labor in Bangladesh</p>
-                <p class="text-third mb-5 mx-10">Date: ${new Date()}</p>
-            `;
-            element('history-list').appendChild(historyList);
-
-            element('my-modal').showModal();
-
-            element('input-4').value = '';
-        }
-        else{
-            alert('Please Type Valid Input')
-        }
+        commonEvent('input-4', 'balance-4', 'balance', 'history-list', 'my-modal', 'Donate for Child Labor in Bangladesh');
 });
 
-
-document.getElementById('btn-5')
+element('btn-5')
     .addEventListener('click', function(){
-        const availableBalance = inputNumber('balance');
-        const donatedMoney = inputValue('input-5');
-        const balance = inputNumber('balance-5');
-
-        const check = document.getElementById('input-5').value;
-
-        if(donatedMoney > 0 && availableBalance > donatedMoney && !isNaN(check)){
-            const availableMoney = availableBalance - donatedMoney;
-            element('balance').innerText = availableMoney;
-
-            element('balance-5').innerText = balance + donatedMoney;
-
-            const historyList = document.createElement('div');
-            historyList.classList.add('border-2', 'rounded-lg');
-
-            historyList.innerHTML = `
-                <p class="text-secondary text-xl font-bold my-5 mx-10">${donatedMoney} Taka is Donated for Donate for poor people in Bangladesh</p>
-                <p class="text-third mb-5 mx-10">Date: ${new Date()}</p>
-            `;
-            element('history-list').appendChild(historyList);
-
-            element('my-modal').showModal();
-
-            element('input-5').value = '';
-        }
-        else{
-            alert('Please Type Valid Input')
-        }
+        commonEvent('input-5', 'balance-5', 'balance', 'history-list', 'my-modal', 'Donate for Poor People in Bangladesh');
 });
 
-
-document.getElementById('btn-6')
+element('btn-6')
     .addEventListener('click', function(){
-        const availableBalance = inputNumber('balance');
-        const donatedMoney = inputValue('input-6');
-        const balance = inputNumber('balance-6');
-
-        const check = document.getElementById('input-6').value;
-
-        if(donatedMoney > 0 && availableBalance > donatedMoney && !isNaN(check)){
-            const availableMoney = availableBalance - donatedMoney;
-            element('balance').innerText = availableMoney;
-
-            element('balance-6').innerText = balance + donatedMoney;
-
-            const historyList = document.createElement('div');
-            historyList.classList.add('border-2', 'rounded-lg');
-
-            historyList.innerHTML = `
-                <p class="text-secondary text-xl font-bold my-5 mx-10">${donatedMoney} Taka is Donated for Donate for helpless people in Palestine</p>
-                <p class="text-third mb-5 mx-10">Date: ${new Date()}</p>
-            `;
-            element('history-list').appendChild(historyList);
-
-            element('my-modal').showModal();
-
-            element('input-6').value = '';
-        }
-        else{
-            alert('Please Type Valid Input')
-        }
+        commonEvent('input-6', 'balance-6', 'balance', 'history-list', 'my-modal', 'Donate for Helpless People in Palestine');
 });
-
 
 const historyBtn = element('history-btn');
 const donationBtn = element('donation-btn');
@@ -223,8 +55,4 @@ donationBtn.addEventListener('click', function(){
     element('card').classList.remove('hidden');
 
     element('footer-bg').classList.remove('hidden');
-});
-
-document.getElementById('blog-btn').addEventListener('click', function(){
-    window.location.href = 'blog.html';
 });
