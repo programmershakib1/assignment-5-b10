@@ -3,8 +3,10 @@ document.getElementById('btn-1')
         const availableBalance = inputNumber('balance');
         const donatedMoney = inputValue('input-1');
         const balance = inputNumber('balance-1');
+        
+        const check = document.getElementById('input-1').value;
 
-        if(donatedMoney > 0 && availableBalance > donatedMoney){
+        if(donatedMoney > 0 && availableBalance > donatedMoney && !isNaN(check)){
             const availableMoney = availableBalance - donatedMoney;
             element('balance').innerText = availableMoney;
 
@@ -35,7 +37,9 @@ document.getElementById('btn-2')
         const donatedMoney = inputValue('input-2');
         const balance = inputNumber('balance-2');
 
-        if(donatedMoney > 0 && availableBalance > donatedMoney){
+        const check = document.getElementById('input-2').value;
+
+        if(donatedMoney > 0 && availableBalance > donatedMoney && !isNaN(check)){
             const availableMoney = availableBalance - donatedMoney;
             element('balance').innerText = availableMoney;
 
@@ -66,7 +70,9 @@ document.getElementById('btn-3')
         const donatedMoney = inputValue('input-3');
         const balance = inputNumber('balance-3');
 
-        if(donatedMoney > 0 && availableBalance > donatedMoney){
+        const check = document.getElementById('input-3').value;
+
+        if(donatedMoney > 0 && availableBalance > donatedMoney && !isNaN(check)){
             const availableMoney = availableBalance - donatedMoney;
             element('balance').innerText = availableMoney;
 
@@ -97,7 +103,9 @@ document.getElementById('btn-4')
         const donatedMoney = inputValue('input-4');
         const balance = inputNumber('balance-4');
 
-        if(donatedMoney > 0 && availableBalance > donatedMoney){
+        const check = document.getElementById('input-4').value;
+
+        if(donatedMoney > 0 && availableBalance > donatedMoney && !isNaN(check)){
             const availableMoney = availableBalance - donatedMoney;
             element('balance').innerText = availableMoney;
 
@@ -128,7 +136,9 @@ document.getElementById('btn-5')
         const donatedMoney = inputValue('input-5');
         const balance = inputNumber('balance-5');
 
-        if(donatedMoney > 0 && availableBalance > donatedMoney){
+        const check = document.getElementById('input-5').value;
+
+        if(donatedMoney > 0 && availableBalance > donatedMoney && !isNaN(check)){
             const availableMoney = availableBalance - donatedMoney;
             element('balance').innerText = availableMoney;
 

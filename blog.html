@@ -37,7 +37,7 @@
       <!-- nav section -->
       <section>
         <nav class="bg-nav_bg">
-            <div class="container w-11/12 mx-auto flex justify-between items-center py-6">
+            <div class="container w-11/12 mx-auto flex justify-between items-center py-6 lg:pb-14">
                 <div>
                     <button id="home-btn" class="w-28 h-12 text-secondary bg-primary text-xl font-semibold rounded-lg">Home</button>
                 </div>
@@ -56,7 +56,10 @@
     <main>
       <!-- faq section -->
       <section class="container w-11/12 mx-auto">
-        <h2 class="text-secondary font-bold text-3xl my-10">Important FAQ</h2>
+        <div class="flex items-center gap-3">
+          <h2 class="text-secondary font-bold text-3xl my-10">Important FAQ</h2>
+          <img src="images/question.gif" alt="">
+        </div>
         <div class="border-2 rounded-lg">
           <!-- faq 1 -->
           <div>
@@ -72,14 +75,14 @@
             <div tabindex="0" class="py-5 collapse collapse-arrow border-base-300 border-b-2 rounded">
                 <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
                 <div class="collapse-content">
-                  <p>Selecting an element from the DOM can be done using various methods provided by the JavaScript document object. Here are some of the most common ways: 1. getElementById 2. getElementsByClassName 3. getElementsByTagName 4. querySelector 5. querySelectorAll</p>
+                  <p>Selecting an element from the DOM can be done using various methods provided by the JavaScript document object. example: 1. getElementById 2. getElementsByClassName 3. getElementsByTagName 4. querySelector 5. querySelectorAll</p>
                 </div>
             </div>
           </div>
           <!-- faq 3 -->
           <div>
             <div tabindex="0" class="py-5 collapse collapse-arrow border-base-300 border-b-2 rounded">
-                <div class="collapse-title text-xl font-medium">HWhat is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
                 <div class="collapse-content">
                   <p>Event Delegation in the DOM refers to the practice of attaching an event listener to a parent element instead of directly to each child element. This allows you to handle events for multiple child elements efficiently without having to add individual event listeners to each one.</p>
                 </div>
@@ -87,10 +90,12 @@
           </div>
           <!-- faq 4 -->
           <div>
-            <div tabindex="0" class="py-5 collapse collapse-arrow border-base-300 border-b-2 rounded">
+            <div tabindex="0" class="py-5 collapse collapse-arrow border-base-300 rounded">
                 <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
                 <div class="collapse-content">
-                  <p>The classList object only provide methods to change the class of an element. If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set.
+                  <p>To manipulate an element's attributes and styles using the DOM, first need to access the element through methods like document.getElementById, document.querySelector, or document.getElementsByClassName.
+                  Attributes: Use setAttribute('attributeName', 'value') to change or add an attribute.
+                  Styles: Access the style property of the element to change CSS styles. then, example (element.style.color = 'blue').
                   </p>
                 </div>
             </div>
