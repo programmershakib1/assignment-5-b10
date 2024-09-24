@@ -163,6 +163,39 @@ document.getElementById('btn-5')
 });
 
 
+document.getElementById('btn-6')
+    .addEventListener('click', function(){
+        const availableBalance = inputNumber('balance');
+        const donatedMoney = inputValue('input-6');
+        const balance = inputNumber('balance-6');
+
+        const check = document.getElementById('input-6').value;
+
+        if(donatedMoney > 0 && availableBalance > donatedMoney && !isNaN(check)){
+            const availableMoney = availableBalance - donatedMoney;
+            element('balance').innerText = availableMoney;
+
+            element('balance-6').innerText = balance + donatedMoney;
+
+            const historyList = document.createElement('div');
+            historyList.classList.add('border-2', 'rounded-lg');
+
+            historyList.innerHTML = `
+                <p class="text-secondary text-xl font-bold my-5 mx-10">${donatedMoney} Taka is Donated for Donate for helpless people in Palestine</p>
+                <p class="text-third mb-5 mx-10">Date: ${new Date()}</p>
+            `;
+            element('history-list').appendChild(historyList);
+
+            element('my-modal').showModal();
+
+            element('input-6').value = '';
+        }
+        else{
+            alert('Please Type Valid Input')
+        }
+});
+
+
 const historyBtn = element('history-btn');
 const donationBtn = element('donation-btn');
 
